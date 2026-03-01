@@ -1,0 +1,25 @@
+from random import shuffle
+from time import sleep
+
+participantes = [] #tranforma em lista
+
+while True:    
+    nome = input("Adicione um none para o sorteio. Caso tenha terminado, digite a palavra 'pronto' para dar fim a lista.\n").strip().lower()	
+    
+    if nome == 'pronto':
+	    break #para o while
+    participantes.append(nome) #adiciona a variável à lista
+
+shuffle(participantes) #embaralha
+numero = 1
+
+print("\n")
+print("-" *50)
+print("\n\nQue comecem os jogos:\n\n")
+
+while len(participantes) > 0:
+	input("")
+	sleep(0.5)
+	escolhido = participantes.pop()
+	print(f"O escolhido(a) número {numero} foi {escolhido.upper()}.")
+	numero += 1
