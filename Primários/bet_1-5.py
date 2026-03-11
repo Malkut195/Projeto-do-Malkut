@@ -35,7 +35,7 @@ if n == 1:
     frase = "de primeira!? Você está roubando"
 elif n in range (2, 5):
     frase = "até que foi razoável"
-elif n in range (5, 10):
+elif n in range (5, 11):
     frase = "você é inimigo da probabilidade, colega"
 elif n > 10:
     frase = "veja pelo lado bom, pelo menos você foi persistente"
